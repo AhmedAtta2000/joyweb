@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOY</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts (Example - Choose fonts that match the design) -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" type="image/png" href="img/logo.png">
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <a href="#home" class="logo-link nav-link" data-target="home"> <!-- ADDED an anchor tag -->
+
+            <div class="logo">
+                <!-- Extract the logo as an image -->
+                <img src="img/logo.png" alt="JOY Logo">
+                <span>Today I Choose JOY</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home" class="nav-link active" data-target="home">Home</a></li>
+                    <li><a href="#about" class="nav-link" data-target="about">About Us</a></li>
+                    <li><a href="#experience" class="nav-link" data-target="experience">Experience</a></li>
+                    <li><a href="#uniqueness" class="nav-link" data-target="uniqueness">Uniqueness</a></li>
+                    <li><a href="#branches" class="nav-link" data-target="branches">Branches</a></li>
+                    <li><a href="#career" class="nav-link" data-target="career">Career</a></li>
+                    <li><a href="#contact" class="nav-link" data-target="contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-contact">
+                <span><i class="fas fa-phone"></i> +965 1234 5678</span>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+            <button class="menu-toggle" aria-label="Toggle menu"><i class="fas fa-bars"></i></button>
+        </div>
+    </header>
+
+    <main>
+        <!-- HOME SECTION (Content from Pages 2-5) -->
+        <section id="home" class="page-section active">
+            <div class="hero-slider">
+                <!-- Slides will be dynamically added or use CSS background-image -->
+                <div class="hero-slide" style="background-image: url('img/hero-strawberry.jpg');"></div>
+                <div class="hero-slide" style="background-image: url('img/hero-coffee.jpg');"></div>
+                <div class="hero-slide" style="background-image: url('img/hero-salad.jpg');"></div>
+                <div class="hero-slide" style="background-image: url('img/hero-chef.jpg');"></div>
+            </div>
+
+            <div class="container">
+                <button class="btn btn-dark contact-us-generic">Contact us</button>
+           </div>
+
+
+
+           <div class="home-intro"> <!-- Removed 'container' class from here -->
+            <div class="home-intro-content-wrapper"> <!-- Added this new wrapper -->
+                <div class="home-intro-text">
+                    <h2>We spread Joy</h2>
+                    <p>From a single product -a simple chocolate-coated strawberry - to a premium dining destination offering a comprehensive menu for every time of day, JOY has come a long way.</p>
+                    <p>Founded by a visionary Kuwaiti woman with deep empathy and a passion for meaningful experiences, JOY has evolved over the past 12 years into a favorite spot for food lovers. Guided by creativity, quality, and care, it offers more than just meals - it creates lasting memories.</p>
+                    <p>Prepared with love, spiced with creativity, and served with elegance, every dish on our menu is crafted to delight the senses and warm the soul. In each of our 14 branches, the beautiful ambiance, the welcoming staff, the high-quality ingredients, and the thoughtfully designed dishes come together in harmony, elevating every visit into something special.</p>
+                    <p>We don't just serve food.<br>We create moments. We spread JOY.</p>
+                </div>
+                <div class="home-intro-image">
+                    <img src="img/chocolate-strawberries-assorted.jpg" alt="Assorted chocolate-coated strawberries">
+                </div>
+            </div>
+        </div>
+        </section>
+
+        <!-- ABOUT SECTION (Content from Page 7) -->
+        <section id="about" class="page-section">
+            <div class="about-hero" style="background-image: url('img/about-hero-strawberry.jpg');">
+                <!-- <div class="about-quote">
+                    <p>"JOY began with a simple idea, to turn everyday moments into something memorable. With every creation, my hope is to spark a smile, stir a memory, or simply make someone feel loved."</p>
+                </div> -->
+            </div>
+            <div class="container">
+                 <button class="btn btn-dark contact-us-generic">Contact us</button>
+                <h2>Vision</h2>
+                <p>To become the most loved name in joyful dining, where every bite creates a beautiful memory and every moment is crafted with care, creativity, and warmth.</p>
+                <h2>Mission</h2>
+                <p>JOY is dedicated to creating a heartfelt food experience that blends flavor with feeling. We serve elegant, high-quality dishes across all dining times (breakfast, lunch, and dinner) prepared with love, presented with creativity, and delivered with care. Our mission is to bring people together, spark meaningful moments, and spread joy, one bite at a time.</p>
+                <h2>Values</h2>
+                <div class="values-grid">
+                    <div class="value-item"><i class="fas fa-heart"></i><span>PASSION</span></div>
+                    <div class="value-item"><i class="fas fa-medal"></i><span>QUALITY</span></div>
+                    <div class="value-item"><i class="fas fa-users"></i><span>DIVERSITY</span></div>
+                    <div class="value-item"><i class="fas fa-hand-holding-heart"></i><span>LOVE</span></div>
+                    <div class="value-item"><i class="far fa-smile"></i><span>HAPPINESS</span></div>
+                    <div class="value-item"><i class="fas fa-share-alt"></i><span>SHARING</span></div>
+                    <div class="value-item"><i class="fas fa-fingerprint"></i><span>AUTHENTICITY</span></div>
+                    <div class="value-item"><i class="fas fa-gem"></i><span>SOPHISTICATION</span></div>
+                </div>
+                 <div class="about-image-lower">
+                    <img src="img/about-strawberries-plate.jpg" alt="Plate of chocolate strawberries">
+                </div>
+            </div>
+        </section>
+
+        <!-- EXPERIENCE SECTION (Content from Page 9) -->
+        <section id="experience" class="page-section">
+            <div class="container">
+                <h2>Taste the JOY</h2>
+                <p>Every visit to JOY is an invitation to slow down, connect, and enjoy something truly special.</p>
+                <div class="meal-types">
+                    <div class="meal-type">
+                        <img src="img/experience-breakfast.jpg" alt="Breakfast at JOY">
+                        <h3>Breakfast <i class="fas fa-arrow-right"></i></h3>
+                    </div>
+                    <div class="meal-type">
+                        <img src="img/experience-lunch.jpg" alt="Lunch at JOY">
+                        <h3>Lunch <i class="fas fa-arrow-right"></i></h3>
+                    </div>
+                    <div class="meal-type">
+                        <img src="img/experience-dinner.jpg" alt="Dinner at JOY">
+                        <h3>Dinner <i class="fas fa-arrow-right"></i></h3>
+                    </div>
+                </div>
+                <p>Whether it's a wholesome breakfast, a flavorful lunch, or a romantic dinner, each dish is thoughtfully crafted to please the senses and lift the spirit. From our signature drinks to seasonal creations, everything we offer is served with care in an elegant surrounding and beautiful ambiance.</p>
+                <p>Because at JOY, flavor is just the beginning of the experience.</p>
+                <button class="btn btn-dark">Book a Table</button>
+
+                <h2>What Our Customers say</h2>
+                <div class="testimonial-slider">
+                    <div class="testimonial-item active">
+                        <img src="img/testimonial-noura.jpg" alt="Noura A." class="testimonial-avatar">
+                        <h4>Noura A.</h4>
+                        <p>"From the moment I walked in, I felt wrapped in warmth. The ambiance, the food, the staff, everything at JOY feels thoughtfully crafted. I still dream about their chocolate-dipped strawberries!"</p>
+                    </div>
+                    <div class="testimonial-item">
+                        <img src="img/testimonial-ahmad.jpg" alt="Ahmad M. senousi" class="testimonial-avatar">
+                        <h4>Ahmad M. senousi</h4>
+                        <p>"JOY is not just a place to dine; it's an experience. Every detail, from the elegant presentation to the subtle flavors, made our lunch feel like a special occasion. Can't wait to come back!"</p>
+                    </div>
+                    <div class="testimonial-item">
+                        <img src="img/testimonial-rawan.jpg" alt="Rawan H." class="testimonial-avatar">
+                        <h4>Rawan H.</h4>
+                        <p>"There's something magical about this place. The food is delicious, but it's the feeling you leave with that keeps you coming back. JOY lives up to its name in every bite."</p>
+                    </div>
+                    <div class="testimonial-nav">
+                        <button class="prev-testimonial"><i class="fas fa-chevron-left"></i></button>
+                        <button class="next-testimonial"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- UNIQUENESS SECTION (Content from Page 11) -->
+        <section id="uniqueness" class="page-section">
+            <div class="container">
+                <div class="uniqueness-content">
+                    <div class="uniqueness-image-main">
+                        <img src="img/uniqueness-dessert.jpg" alt="Chef plating dessert">
+                   </div>
+                    <div class="uniqueness-text">
+                        <h2>The Magic of JOY</h2>
+                        <p>We stand apart through a deep understanding of today's evolving tastes and desires. Guided by passion and curiosity, we turn creativity into a tool of discovery, crafting new dishes and desserts that feel personal, relevant, and exciting.</p>
+                        <p>With every season, every trend, and every inspiration, JOY reinvents its menu to surprise, engage, and stay ahead, reflecting our values of innovation, renewal, and joyful expression.</p>
+                        <p>At JOY, uniqueness isn't an ingredient, it's a feeling, tasted and remembered.</p>
+                        <button class="btn btn-dark">Book a Table</button>
+                    </div>
+                </div>
+                <div class="uniqueness-gallery">
+                    <img src="img/uniqueness-people.jpg" alt="People enjoying at JOY">
+                    <img src="img/uniqueness-interior.jpg" alt="JOY interior">
+                </div>
+            </div>
+        </section>
+
+        <!-- CAREER SECTION (Content from Page 13) -->
+        <section id="career" class="page-section">
+            <div class="container career-container">
+                <div class="career-image">
+                    <img src="img/careers-staff.jpg" alt="JOY Staff">
+                </div>
+                <div class="career-text">
+                    <h2>Grow with JOY</h2>
+                    <p>At JOY, we believe great experiences start with great people. If you're passionate, creative, and driven by a love for hospitality, we'd love to welcome you into our team, and grow together.</p>
+                    <p>Ready to Join?</p>
+                    <button class="btn btn-dark">Apply now</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- BRANCHES SECTION (Content from Page 15) -->
+        <section id="branches" class="page-section">
+            <div class="container">
+                <div class="branches-intro">
+                    <div class="branches-text">
+                        <h2>Where JOY Finds You</h2>
+                        <p>With 14 elegant locations across Kuwait, JOY brings its signature blend of modern comfort and refined ambiance closer to you.</p>
+                        <p>Each branch is thoughtfully designed to offer a welcoming atmosphere, complemented by professional, friendly, and accurate service.</p>
+                        <p>Whether you're near home, work, or out with friends, there's always a place where JOY finds you.</p>
+                        <button class="btn btn-dark">Book a Table</button>
+                    </div>
+                </div>
+                <div class="branches-image">
+                    <img src="img/branches-interior.jpg" alt="JOY Branch Interior">
+                </div>
+
+                <div class="branches-list-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>BRANCH</th>
+                                <th>AREA</th>
+                                <th>CONTACT</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Avenues</td><td>Al Rai</td><td>5678 1234</td></tr>
+                            <tr><td>360 Mall</td><td>South Surra</td><td>5678 1234</td></tr>
+                            <tr><td>Al Fanar Mall</td><td>Salmiya</td><td>5678 1234</td></tr>
+                            <tr><td>Boulevard</td><td>Salmiya</td><td>5678 1234</td></tr>
+                            <tr><td>The Gate Mall</td><td>Egaila</td><td>5678 1234</td></tr>
+                            <tr><td>89 Mall</td><td>Egaila</td><td>5678 1234</td></tr>
+                            <tr><td>Al Kout Mall</td><td>Fahaheel</td><td>5678 1234</td></tr>
+                            <tr><td>Sahari Mall</td><td>Jahra</td><td>5678 1234</td></tr>
+                            <tr><td>Slayel</td><td>Jahra</td><td>5678 1234</td></tr>
+                            <tr><td>The Spot</td><td>Messila</td><td>5678 1234</td></tr>
+                            <tr><td>Tijarya Tower</td><td>Kuwait City</td><td>5678 1234</td></tr>
+                            <tr><td>Al Raya Tower</td><td>Sharq</td><td>5678 1234</td></tr>
+                            <tr><td>Assima Mall</td><td>Sharq</td><td>5678 1234</td></tr>
+                            <tr><td>Khiran Mall</td><td>Al Khairan</td><td>5678 1234</td></tr>
+                        </tbody>
+                    </table>
+                    <button class="btn btn-dark">Show on Map</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION (Content from Page 17) -->
+        <section id="contact" class="page-section">
+            <div class="container">
+                <h2>Stay in Touch with JOY</h2>
+            </div>
+            <div class="contact-map-area">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3479.738348002732!2d47.91688971099125!3d29.290010053818115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3fcf91003621d9d1%3A0x4da1e24d71e32d75!2sJOY%20COMPANY%20HEAD%20OFFICE!5e0!3m2!1sen!2seg!4v1748857993989!5m2!1sen!2seg" width="1920" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                 <div class="head-office-info">
+                     <h3>Head Office</h3>
+                     <p>Kuwait City, Kuwait</p>
+                     <p>Phone: (+965) 5678 1234</p>
+                     <p>Email: hello@joy.com</p>
+                 </div>
+            </div>
+            <div class="container contact-form-container">
+                <form id="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="E Mail" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="phone" name="phone" placeholder="Phone">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="company" name="company" placeholder="Company">
+                    </div>
+                    <div class="form-group form-group-full">
+                        <textarea id="message" name="message" placeholder="Message" rows="5" required></textarea>
+                    </div>
+                    <!-- Basic reCAPTCHA placeholder - real one needs JS library -->
+                    <div class="form-group recaptcha-placeholder">
+                        <input type="checkbox" id="not-a-robot" required> <label for="not-a-robot">I'm not a robot</label>
+                    </div>
+                    <button type="submit" class="btn btn-dark">Send</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-container">
+            <p>© 2025 Joy Kuwait</p>
+            <div class="social-links">
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
